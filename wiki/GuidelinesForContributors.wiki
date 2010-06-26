@@ -11,13 +11,17 @@ The PMTK3 [http://pmtk3.googlecode.com/svn/trunk/misc/metatools/dataTools/loadDa
 
   * Each line of the foo-meta.txt file begins with a % followed by a space, and contains a [http://code.google.com/p/pmtk3/wiki/PMTKtags PMTK tag] along with its data. [http://pmtkdata.googlecode.com/svn/trunk/bishop2class/bishop2class-meta.txt Here] is an example. 
 
-  * Zip up the new folder, and add this zip file to the directory, or run the following [http://pmtk3.googlecode.com PMTK3] command to do this automatically. The zip file must  have the same name as the data set as well. 
+  * Check the folder in to svn. 
+
+  * Zip up the new folder by running the following command:
 
 {{{
   refreshZipFiles('foo'); 
 
 }}}
 
-  * The [http://pmtk3.googlecode.com/svn/trunk/misc/metatools/dataTools/refreshZipFiles.m refreshZipfiles] function automatically excludes.svn directories. If you are zipping up a folder manually, make sure not to include the svn info, either by doing this before you check the folder in, or by running {{{ svn export }}}.
+  The [http://pmtk3.googlecode.com/svn/trunk/misc/metatools/dataTools/refreshZipFiles.m refreshZipfiles] function automatically excludes .svn directories. If you are zipping up a folder manually, make sure not to include the svn info, either by doing this before you check the folder in, or by running {{{ svn export }}}.
 
-  * Finally check the folder in and test auto-downloding with {{{loadData('foo') }}} making sure the folder you just created is not on your MATLAB path. 
+  * Test auto-downloding with {{{loadData('foo') }}} making sure the folder you just created is not on your MATLAB path. 
+
+  * Run {{{generatePmtkDataTable}}} to update the list of datasets.
