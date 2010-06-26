@@ -3,13 +3,13 @@
 
 The PMTK3 [http://pmtk3.googlecode.com/svn/trunk/misc/metatools/dataTools/loadData.m loadData] function automatically downloads required data sets from [http://code.google.com/p/pmtkdata/ the pmtkdata web site]. To ensure that this works for new data sets, please follow these guidelines:
 
-  * Data sets are stored on the google code repository [http://code.google.com/p/pmtkdata/ here]. Each data set must live in in its own folder and have exactly one .mat file. Store any processing scripts and source data in this folder as well. 
+  *  Each data set must live in in its own folder and have exactly one .mat file. Store any processing scripts and source data in this folder as well. 
 
   * The name of the .mat file and the folder must be the same. 
 
   * Each data set folder must have a foo-meta.txt file, where "foo" is the name of the data set. This file stores "meta" information used to generate [http://pmtkdata.googlecode.com/svn/trunk/dataTable.html this table].
 
-  * Each line of the foo-meta.txt file begins with a % followed by a space, and contains a [http://code.google.com/p/pmtk3/wiki/PMTKtags PMTK tag] along with its data. [http://pmtkdata.googlecode.com/svn/trunk/bishop2class/bishop2class-meta.txt Here] is an example. 
+  * Each line of the foo-meta.txt file begins with a % followed by a space, and contains a [http://code.google.com/p/pmtk3/wiki/PMTKtags PMTK tags] along with its data. [http://pmtkdata.googlecode.com/svn/trunk/bishop2class/bishop2class-meta.txt Here] is an example. 
 
   * Check the folder in to svn. 
 
@@ -24,4 +24,4 @@ The PMTK3 [http://pmtk3.googlecode.com/svn/trunk/misc/metatools/dataTools/loadDa
 
   * Test auto-downloding with {{{loadData('foo') }}} making sure the folder you just created is not on your MATLAB path. 
 
-  * Run {{{generatePmtkDataTable}}} to update the list of datasets.
+  * Run {{{generatePmtkDataTable}}} to update the [http://pmtkdata.googlecode.com/svn/trunk/dataTable.html list of datasets].
