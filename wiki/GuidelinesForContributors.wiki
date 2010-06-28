@@ -13,11 +13,10 @@ The PMTK3 [http://pmtk3.googlecode.com/svn/trunk/toolbox/metatools/dataTools/loa
 
   * Check the folder in to svn. 
 
-  * Zip up the new folder by running the following command:
+  * Zip up the new folder by running the following PMTK command:
 
 {{{
-  refreshZipFiles('foo'); 
-
+  refreshZipFiles('data' 'foo'); 
 }}}
 
   The [http://pmtk3.googlecode.com/svn/trunk/misc/metatools/dataTools/refreshZipFiles.m refreshZipFiles] function automatically excludes .svn directories before creating the zip file, which is stored inside the foo directory. If you are zipping up a folder manually, make sure not to include the svn info, either by doing this before you check the folder in, or by running {{{ svn export }}}.
