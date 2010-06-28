@@ -25,6 +25,6 @@ The PMTK3 [http://pmtk3.googlecode.com/svn/trunk/toolbox/metatools/dataTools/loa
 
   * Test auto-downloding with {{{loadData('foo') }}} making sure the folder you just created is not on your MATLAB path. 
 
-  * Run {{{generatePmtkDataTable}}} to update the [http://pmtkdata.googlecode.com/svn/trunk/dataTable.html list of datasets].
+  * Run {{{generatePmtkDataTable}}} to update the [http://pmtkdata.googlecode.com/svn/trunk/docs/dataTable.html list of datasets].
 
   * That's it
